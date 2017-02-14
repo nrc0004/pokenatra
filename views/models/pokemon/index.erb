@@ -1,0 +1,12 @@
+
+<h2>All Pokemon</h2>
+<% @pokemon.each do |pokemon|%>
+  <p class="pokemon">
+    <a href="/pokemon/<%= pokemon.id %>"><%= pokemon.name %></a>
+  </p>
+<% end %>
+
+<h2>Enter New Pokemon Here and Hit Enter</h2>
+<form action="add_pokemon" method="post">
+  <input name='name'>
+</form>
