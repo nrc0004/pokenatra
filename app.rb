@@ -25,7 +25,7 @@ get '/pokemon/:id' do
 end
 
 get '/' do
-  @pokemon = artist
+  @pokemon = pokemon
   erb :index
 end
 
